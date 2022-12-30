@@ -49,5 +49,16 @@ window.onload = function() {
   
       addBookToLibrary(book);
     });
+    
+    function resetBookElement(book) {
+        const bookElements = Array.from(libraryElement.querySelectorAll(".book"));
+        const bookElement = bookElements.find(element => element.querySelector(".book-title").textContent === book.title);
+        libraryElement.removeChild(bookElement);
+        const index = library.indexOf(book);
+        if (index > -1) {
+          library.splice(index, 1);
+        }
+      }
+
   }
   
