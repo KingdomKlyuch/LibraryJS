@@ -9,6 +9,35 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+
+<div id="library">
+
+    <template id="book-template">
+      <div class="book">
+
+        <h3 class="book-title"></h3>
+
+        <p class="book-author"></p>
+
+        <input type="checkbox" class="book-read-status">
+
+        <button class="book-remove-button">Remove</button>
+      </div>
+    </template>
+  </div>
+
+  <form id="add-book-form">
+
+    <label for="book-title-input">Title:</label>
+    <input type="text" id="book-title-input">
+
+    <label for="book-author-input">Author:</label>
+    <input type="text" id="book-author-input">
+
+    <button type="submit">Add Book</button>
+  </form>
+  
+
     
 </body>
 </html>
