@@ -9,23 +9,32 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+</template>
+</div>
+<form id="add-book-form">
+  <label for="book-title-input">Title:</label>
+  <input type="text" id="book-title-input">
+  <label for="book-author-input">Author:</label>
+  <input type="text" id="book-author-input">
+  <label for="book-pages-input">Number of pages:</label>
+  <input type="number" id="book-pages-input">
+  <button type="submit">Add Book</button>
+</form>
+
   <div id="library">
     <!-- Book elements will be added here -->
     <template id="book-template">
-      <div class="book">
-        <h3 class="book-title"></h3>
-        <p class="book-author"></p>
-        <input type="checkbox" class="book-read-status">
-        <button class="book-remove-button">Remove</button>
-      </div>
-    </template>
-  </div>
-  <form id="add-book-form">
-    <label for="book-title-input">Title:</label>
-    <input type="text" id="book-title-input">
-    <label for="book-author-input">Author:</label>
-    <input type="text" id="book-author-input">
-    <button type="submit">Add Book</button>
-  </form>
+        <div class="book">
+          <h3 class="book-title"></h3>
+          <p class="book-author"></p>
+          <p class="book-pages"></p>
+          <label for="book-read-status">Book read:</label>
+          <input type="checkbox" class="book-read-status" name="book-read-status">
+          <button class="book-remove-button">Remove</button>
+        </div>
+      </template>
+      
+
+  
 </body>
 </html>
