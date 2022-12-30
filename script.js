@@ -53,8 +53,3 @@ function changeReadStatus(book, isRead) {
   }
 }
 
-// Add default book elements to the library
-for (let i = 0; i < 8; i++) {
-  const defaultBook = new Book("Title", "Author", false);
-  addBookToLibrary(defaultBook);
-}
