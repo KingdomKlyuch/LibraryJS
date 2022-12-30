@@ -1,54 +1,70 @@
 #library {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  height: 50vh;
+}
+
+.book {
+  background-color: #f4f4f493;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-title {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  color: gray;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+
+    background-color: #ccc;
   }
   
-  #book-template {
-    /* Remove display: none */
+  input[type="checkbox"]:checked {
+
+    background-color: #00f;
   }
   
-  .book {
-    border: 1px solid black;
-    margin: 10px;
-    width: 200px;
-    padding: 10px;
-  }
-  
-  .book-title {
-    margin: 0;
-  }
-  
-  .book-author {
-    color: gray;
-    margin: 0;
-  }
-  
-  .book-remove-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  #add-book-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-  }
-  
-  #add-book-form label,
-  #add-book-form input {
-    margin: 10px;
-  }
-  
-  #add-book-form button[type="submit"] {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
+
+.book-remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#add-book-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+#add-book-form label,
+#add-book-form input {
+  margin: 10px;
+}
+
+#add-book-form button[type="submit"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
