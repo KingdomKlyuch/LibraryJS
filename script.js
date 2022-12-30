@@ -10,22 +10,22 @@ window.onload = function() {
     }
   
     function addBookToLibrary(book) {
-      library.push(book);
-      const bookElement = document.importNode(bookTemplateElement.content, true);
-      bookElement.querySelector(".book-title").textContent = book.title;
-      bookElement.querySelector(".book-author").textContent = book.author;
-      bookElement.querySelector(".book-read-status").checked = book.read;
-      bookElement.querySelector(".book-remove-button").addEventListener("click", () => {
-        resetBookElement(book);
-      });
-  
-      // Add a change event listener to the book's read status checkbox
-      bookElement.querySelector(".book-read-status").addEventListener("change", () => {
-        changeReadStatus(book, event.target.checked);
-      });
-  
-      libraryElement.appendChild(bookElement);
-    }
+        library.push(book);
+        const bookElement = document.importNode(bookTemplateElement.content, true);
+        bookElement.querySelector(".book-title").textContent = book.title;
+        bookElement.querySelector(".book-author").textContent = book.author;
+        bookElement.querySelector(".book-read-status").checked = book.read;
+        bookElement.querySelector(".book-remove-button").addEventListener("click", () => {
+          resetBookElement(book);
+        });
+      
+        // Add a click event listener to the book's read status checkmark
+        bookElement.querySelector(".book-read-status").addEventListener("click", () => {
+          toggleReadStatus(book);
+        });
+      
+        libraryElement.appendChild(bookElement);
+      }
   
     function changeReadStatus(book, isRead) {
       let index = library.indexOf(book);
