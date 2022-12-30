@@ -1,0 +1,56 @@
+
+#library {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #book-template {
+    display: none;
+  }
+  
+  .book {
+    border: 1px solid black;
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .book-title {
+    margin: 0;
+  }
+  
+  .book-author {
+    color: gray;
+    margin: 0;
+  }
+  
+  .book-remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #add-book-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+
+  #add-book-form label,
+  #add-book-form input {
+    margin: 10px;
+  }
+  
+  #add-book-form button[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
