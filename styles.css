@@ -164,3 +164,23 @@ body {
 .header-login-button:active {
   transform: translateY(1px);
 }
+
+.footer {
+  position: fixed;
+  
+  left: 0;
+  bottom: 0;
+  width: 97.7%;
+  background-color: rgb(107, 124, 147); 
+  color: #fff;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.footer-credit {
+  margin-left: auto;
+  font-size: 14px;
+}
