@@ -16,39 +16,67 @@
   padding: 20px;
   text-align: center;
 }
-
+/* Use a subtle text shadow for the book title */
 .book-title {
   font-size: 18px;
   margin: 0;
   margin-bottom: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Use a subtle text shadow for the book author */
 .book-author {
-  color: gray;
+  font-size: 14px;
+  color: #ccc;
+  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Use a subtle text shadow for the book pages */
+.book-pages {
+  font-size: 14px;
+  color: #ccc;
   margin: 0;
   margin-bottom: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-input[type="checkbox"] {
+/* Style the book cover image */
+.book-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
 
-    background-color: #ccc;
-  }
-  
-  input[type="checkbox"]:checked {
-
-    background-color: #00f;
-  }
-  
-
+/* Style the book remove button */
 .book-remove-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
+  background-color: rgba(0, 0, 87, 0.582);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  color: #fff;
   cursor: pointer;
-  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
+/* Add hover effect to the book remove button */
+.book-remove-button:hover {
+  background-color: rgb(112, 121, 201);
+  color: #eceff3;
+}
+
+/* Add active state to the book remove button */
+.book-remove-button:active {
+  transform: translateY(1px);
+}
+
+/* Style the add book form */
 #add-book-form {
   display: flex;
   flex-wrap: wrap;
@@ -61,10 +89,70 @@ input[type="checkbox"] {
   margin: 10px;
 }
 
+/* Style the add book form submit button */
 #add-book-form button[type="submit"] {
-  background-color: green;
-  color: white;
+  background-color: #6b7c93;
   border: none;
-  padding: 5px 10px;
+  border-radius: 4px;
+  color: #fff;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add hover effect to the add book form submit button */
+#add-book-form button[type="submit"]:hover {
+  background-color: #fff;
+  color: #6b7c93;
+}
+
+/* Add active state to the add book form submit button */
+#add-book-form button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #6b7c93;
+  color: #fff;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header title */
+.header-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Style the header login button */
+.header-login-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add hover effect to the header login button */
+.header-login-button:hover {
+  background-color: #fff;
+  color: #6b7c93;
+}
+
+/* Add active state to the header login button */
+.header-login-button:active {
+  transform: translateY(1px);
 }
