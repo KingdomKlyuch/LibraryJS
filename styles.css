@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: floralwhite;
+}
+
+
 #library {
   display: flex;
   flex-wrap: wrap;
@@ -7,7 +15,7 @@
 }
 
 .book {
-  background-color: rgba(244, 244, 244, 0.6);
+  background-color: rgba(133, 171, 206, 0.404);
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
   width: 200px;
@@ -24,15 +32,15 @@
 }
 
 .book-title {
-  font-size: 18px;
+  font-size: 32px;
   margin: 0;
   margin-bottom: 10px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .book-author {
-  font-size: 14px;
-  color: #ccc;
+  font-size: 18px;
+  color: rgb(42, 49, 90);
   margin: 0;
   margin-bottom: 10px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -40,7 +48,7 @@
 
 .book-pages {
   font-size: 14px;
-  color: #ccc;
+  color: rgb(42, 49, 90);
   margin: 0;
   margin-bottom: 20px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -56,7 +64,7 @@
 
 .book-remove-button {
   background-color: rgba(0, 0, 87, 0.582);
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(35, 79, 104);
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
@@ -72,12 +80,11 @@
   color: #eceff3;
 }
 
-/* Add active state to the book remove button */
 .book-remove-button:active {
   transform: translateY(1px);
 }
 
-/* Style the add book form */
+
 #add-book-form {
   display: flex;
   flex-wrap: wrap;
@@ -115,13 +122,15 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: #6b7c93;
+  justify-content: space-between;
+  background-color: rgba(107, 124, 147, 0.8); 
   color: #fff;
   height: 60px;
   padding: 0 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 }
+
 
 .header-title {
   font-size: 20px;
